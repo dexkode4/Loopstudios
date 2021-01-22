@@ -1,0 +1,26 @@
+$screen-mobile: 375px;
+
+$screen-desktop: 1440px;
+
+
+
+@mixin sm {
+    @media (max-width: #{$screen-mobile}) {
+        @content;
+    }
+}
+
+
+// Large devices
+@mixin lg {
+    @media (min-width: #{$screen-desktop}) {
+        @content;
+    }
+}
+
+// Custom devices
+@mixin custombreakpoint($screen) {
+    @media (max-width: $screen+'px') {
+        @content;
+    }
+}
