@@ -28,10 +28,14 @@ function Footer() {
                 </ul>
             </nav>
             <div className={styles.footerSocial}>
-                        <FacebookIcon/>
-                        <TwitterIcon/>
-                        <PinterestIcon/>
-                        <InstagramIcon/>
+                <FacebookIcon />
+                <TwitterIcon />
+                <PinterestIcon />
+                <InstagramIcon />
+            </div>
+
+            <div className={styles.footerCopyright}>
+                &copy; 2021 Loopstudios. All rights reserved
             </div>
         </div>
     )

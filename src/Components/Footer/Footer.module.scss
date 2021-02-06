@@ -3,7 +3,7 @@
 
 .footer{
     background-color: $color-black;
-    padding: 6rem 3rem;
+    padding: 6rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,11 +25,31 @@
                 padding: .5rem 0;
                 transition: color .2s ease-in;
                 text-transform: capitalize;
+
                 &:hover{
-                  
+                   font-size: 1.1rem;
                 }
             }
         }
+    }
+
+    &Social{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        width: 50%;
+
+        & > * {
+            transition: all .2s ease;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &Copyright{
+        color: $color-dark-gray;
+        margin-top: 2rem;
     }
 }
 
