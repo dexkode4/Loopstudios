@@ -1,0 +1,35 @@
+@import '../../styles/main.scss';
+
+
+.footer{
+    background-color: $color-black;
+    padding: 6rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $color-white;
+
+    &Menu{
+        color: $color-dark-gray;
+        margin-top: 3rem;
+        text-align: center;
+        & ul {
+            list-style-type: none;
+
+            & li {
+                color: $color-light-gray;
+                font-size: 1rem;
+                font-weight: 400;
+                margin-bottom: 1rem;
+                padding: .5rem 0;
+                transition: color .2s ease-in;
+                text-transform: capitalize;
+                &:hover{
+                  
+                }
+            }
+        }
+    }
+}
+

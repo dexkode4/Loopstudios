@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CloseIcon, HamburgerIcon, LogoIcon } from '../../assets/svg';
+import { HamburgerIcon, LogoIcon } from '../../assets/svg';
 import NavMenu from '../NavMenu';
 import styles from './Header.module.scss';
 

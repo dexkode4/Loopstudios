@@ -7,7 +7,7 @@ import cx from 'classnames';
 
 
 
-const MenuLinks = [
+export const MenuLinks = [
     {
         title: 'ABOUT',
         link: 'about'
@@ -66,11 +66,6 @@ function NavMenu({ setIsopen, isOpen }: INavMenu) {
                             </LinkScroll>
                         </li>
                     ))}
-                    {/* <li className={styles.navMenuItem}>ABOUT</li>
-                    <li className={styles.navMenuItem}>CAREERS</li>
-                    <li className={styles.navMenuItem}>EVENTS</li>
-                    <li className={styles.navMenuItem}>PRODUCTS</li>
-                    <li className={styles.navMenuItem}>SUPPORT</li> */}
                 </ul>
             </nav>
         </div>

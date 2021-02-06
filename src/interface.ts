@@ -1,4 +1,4 @@
 export interface INavMenu {
-    setIsopen: any,
+    setIsopen?: any,
     isOpen?: boolean
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './About.module.scss';
-import { InteractiveImg } from '../../assets/img'
+import { InteractiveImg } from '../../assets/img/mobile'
 
 type AboutProps = {
     id: string
