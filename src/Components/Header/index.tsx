@@ -9,7 +9,7 @@ function Header() {
         <div className={styles.header}>
             <LogoIcon className={styles.headerLogo} />
             <HamburgerIcon className={styles.headerTogglemenu} onClick={() => setIsOpen(true)}/>
-            { isOpen && <NavMenu  setIsopen={setIsOpen} isOpen={isOpen}/>}
+            <NavMenu  setIsopen={setIsOpen} isOpen={isOpen}/>
         </div>
     )
 }

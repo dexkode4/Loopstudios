@@ -2,15 +2,16 @@ import React from 'react'
 import { CloseIcon, LogoIcon } from '../../assets/svg';
 import styles from './NavMenu.module.scss';
 import { INavMenu } from '../../interface';
+import cx from 'classnames';
 
 
 
 function NavMenu({ setIsopen, isOpen }: INavMenu) {
     return (
-        <div className={styles.nav}>
+        <div className={cx(styles.nav, isOpen && styles.navOpen)}>
             <div className={styles.navHeader}>
                 <LogoIcon />
-                <CloseIcon onClick={() => setIsopen(false)} />
+                <CloseIcon onClick={() => setIsopen(false)} className={cx(isOpen && styles.rotate)} />
             </div>
 
             <nav className={styles.navMenu}>
