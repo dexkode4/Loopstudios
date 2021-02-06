@@ -5,17 +5,16 @@ import About from './Components/About';
 import Products from './Components/Products';
 import Footer from './Components/Footer';
 import ComingSoon from './Components/ComingSoon';
-import { isMobile } from 'react-device-detect';
 
 function App() {
-  return isMobile ?
+  return (
     <div className={styles.app}>
       <Hero id={"hero"} />
       <About id={"about"} />
       <Products id={"products"} />
       <Footer />
-    </div> : <ComingSoon />
-
+    </div>
+  )
 }
 
 export default App;

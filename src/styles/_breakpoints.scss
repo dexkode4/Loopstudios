@@ -1,5 +1,5 @@
 $screen-mobile: 375px;
-
+$screen-mid: 700px;
 $screen-desktop: 1440px;
 
 
@@ -10,6 +10,12 @@ $screen-desktop: 1440px;
     }
 }
 
+@mixin md {
+    @media (min-width: #{$screen-mid}) {
+        @content;
+    }
+
+}
 
 // Large devices
 @mixin lg {
@@ -20,7 +26,7 @@ $screen-desktop: 1440px;
 
 // Custom devices
 @mixin custombreakpoint($screen) {
-    @media (max-width: $screen+'px') {
+    @media (min-width: $screen+'px') {
         @content;
     }
 }

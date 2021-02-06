@@ -13,7 +13,7 @@ function Hero({id}:HeroProps) {
            <div className={styles.heroBanner}>
                 <h1>IMMERSIVE</h1>
                 <h1>EXPERIENCES</h1>
-                <h1>THAT</h1>
+                <h1>THAT <span>DELIVER</span> </h1>
                 <h1>DELIVER</h1>
            </div>
         </div>
