@@ -42,7 +42,7 @@ function NavMenu({ setIsopen, isOpen }: INavMenu) {
                     body.style.position = 'relative';
                     setIsopen(false)
                 }
-                } className={cx(isOpen && styles.rotate)} />
+                } className={cx(isOpen && styles.rotate, styles.closeIcon)} />
             </div>
 
             <nav className={styles.navMenu}>
