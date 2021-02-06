@@ -1,4 +1,5 @@
 import Hero from './mobile/image-hero.jpg';
+import InteractiveImg from './mobile/image-interactive.jpg'
 // export { ReactComponent as FacebookIcon } from './icon-facebook.svg';
 // export { ReactComponent as HamburgerIcon } from './icon-hamburder.svg';
 // export { ReactComponent as InstagramIcon } from './icon-instagram.svg';
@@ -7,4 +8,4 @@ import Hero from './mobile/image-hero.jpg';
 // export { ReactComponent as LogoIcon } from './logo.svg';
 
 
-export { Hero }
+export { Hero, InteractiveImg }

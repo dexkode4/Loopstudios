@@ -33,15 +33,17 @@
 .nav {
     background: $color-black;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     padding: 3rem 1.5rem;
     top: 0;
-    left: -100%;
+    left: 0;
     transition: all .5s ease-in-out;
     width: 100vw;
     overflow: hidden;
+    transform: translateX(-100%);
+    z-index: 100;
     &Open{
-        left: 0;
+        transform: translateX(0);
     }
    
 

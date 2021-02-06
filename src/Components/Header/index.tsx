@@ -4,12 +4,16 @@ import NavMenu from '../NavMenu';
 import styles from './Header.module.scss';
 
 function Header() {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
+    const body = document.body;
     return (
         <div className={styles.header}>
             <LogoIcon className={styles.headerLogo} />
-            <HamburgerIcon className={styles.headerTogglemenu} onClick={() => setIsOpen(true)}/>
-            <NavMenu  setIsopen={setIsOpen} isOpen={isOpen}/>
+            <HamburgerIcon className={styles.headerTogglemenu} onClick={() => {
+                body.style.position = 'fixed';
+                setIsOpen(true)
+            }} />
+            <NavMenu setIsopen={setIsOpen} isOpen={isOpen} />
         </div>
     )
 }
