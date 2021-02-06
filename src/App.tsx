@@ -4,7 +4,6 @@ import styles from './App.module.scss';
 import About from './Components/About';
 import Products from './Components/Products';
 import Footer from './Components/Footer';
-import ComingSoon from './Components/ComingSoon';
 
 function App() {
   return (
