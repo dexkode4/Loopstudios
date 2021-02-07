@@ -14,6 +14,24 @@
         font-weight: 300;
         margin-bottom: 3rem;
     }
+
+    @include md {
+        padding: 0 6rem;
+    }
+    &Container{
+        width: 100%;
+        @include md{
+            display: grid;
+            align-items: center;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+            grid-auto-rows: 500px;
+        }
+
+        @include custombreakpoint('1676'){
+            grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
+        }
+    }
 }
 
 
@@ -23,7 +41,9 @@
     height: 9rem;
     position: relative;
     margin-bottom: 2rem;
-
+    @include md {
+        height: 100%;
+    }
     &:hover {
 		cursor: pointer;
         & .productBgImg{
