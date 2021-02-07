@@ -11,7 +11,8 @@
     background-size: cover;
     @include md {
         background-image: url(../../assets/img/desktop/image-hero.jpg);
-        padding: 5rem 6rem;
+        padding: 5rem 10rem;
+        height: 80vh;
     }
 
     &Banner{
@@ -34,7 +35,7 @@
             width: max-content;
 
             & h1{
-                font-size: 7vw;
+                font-size: 6vw;
                 font-weight: 100;
                 span {
                     display: inline;

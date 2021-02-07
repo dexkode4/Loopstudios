@@ -36,7 +36,7 @@
     }
 
     @include md {
-        padding: 0 6rem;
+        padding: 0 10rem;
         & > *:last-child{
             display: none;
         }

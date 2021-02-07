@@ -37,7 +37,7 @@
     }
 
     @include md {
-        padding: 5rem 6rem;
+        padding: 5rem 10rem;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(6, 1fr);
