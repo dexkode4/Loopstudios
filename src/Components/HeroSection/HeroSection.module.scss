@@ -11,6 +11,7 @@
     background-size: cover;
     @include md {
         background-image: url(../../assets/img/desktop/image-hero.jpg);
+        background-position: center;
         padding: 5rem 10rem;
         height: 80vh;
     }
