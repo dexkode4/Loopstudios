@@ -7,35 +7,39 @@ import { MenuLinks } from '../NavMenu';
 function Footer() {
     return (
         <div className={styles.footer}>
-            <LogoIcon />
-            <nav className={styles.footerMenu}>
-                <ul>
-                    {MenuLinks.map(({ title, link }: { title: string, link: string }, index: number) => (
-                        <li className={styles.navMenuItem} key={index} >
+            <div className={styles.footerLeft}>
+                <LogoIcon />
+                <nav className={styles.footerMenu}>
+                    <ul>
+                        {MenuLinks.map(({ title, link }: { title: string, link: string }, index: number) => (
+                            <li className={styles.navMenuItem} key={index} >
 
-                            <LinkScroll
-                                activeClass="active"
-                                to={`${link}`}
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500}
-                            >
-                                {title.toLowerCase()}
-                            </LinkScroll>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
-            <div className={styles.footerSocial}>
-                <FacebookIcon />
-                <TwitterIcon />
-                <PinterestIcon />
-                <InstagramIcon />
+                                <LinkScroll
+                                    activeClass="active"
+                                    to={`${link}`}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                >
+                                    {title.toLowerCase()}
+                                </LinkScroll>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
             </div>
+            <div className={styles.footerRight}>
+                <div className={styles.footerSocial}>
+                    <FacebookIcon />
+                    <TwitterIcon />
+                    <PinterestIcon />
+                    <InstagramIcon />
+                </div>
 
-            <div className={styles.footerCopyright}>
-                &copy; 2021 Loopstudios. All rights reserved
+                <div className={styles.footerCopyright}>
+                    &copy; 2021 Loopstudios. All rights reserved
+            </div>
             </div>
         </div>
     )
