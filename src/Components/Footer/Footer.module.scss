@@ -19,7 +19,11 @@
 
     &Left , &Right{
         display: flex;
+        align-items: center;
         flex-direction: column;
+        @include md {
+           align-items: flex-start;
+        }
     }
 
     &Menu{
@@ -61,8 +65,8 @@
         justify-content: space-between;
         margin-top: 2rem;
         width: 50%;
-        align-self: flex-end;
         @include md {
+            align-self: flex-end;
             margin-top: 0;
         }
 
