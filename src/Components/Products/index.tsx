@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Product from './Product';
 import styles from './Products.module.scss';
 import { productImagesSchema } from '../../assets/img/mobile';
@@ -12,27 +12,31 @@ type ProductsProps = {
 function Products({ id }: ProductsProps) {
     const [imageSchema, setImageSchema] = useState(productImagesSchema);
     const [displayWidth, setDisplaywidth] = useState(window.innerWidth);
-    
+
     const handleResize = () => {
         setDisplaywidth(window.innerWidth);
     }
 
     useEffect(() => {
         window.addEventListener('resize', handleResize);
-        if(displayWidth > 700){
+        if (displayWidth > 700) {
             setImageSchema(productImagesSchemaDesktop)
         }
         else {
-            setImageSchema(productImagesSchema) 
+            setImageSchema(productImagesSchema)
         }
-    },[displayWidth])
+    }, [displayWidth])
 
     return (
         <div className={styles.products} id={id}>
             <header className={styles.productsHeader}>OUR CREATIONS</header>
+            <div className={styles.productsHeaderDesktop}>
+                <header className={styles.productsHeader}>OUR CREATIONS</header>
+                <Button text="SEE ALL" />
+            </div>
             <div className={styles.productsContainer}>
                 {
-                    imageSchema.map(({ image, title },index) => (
+                    imageSchema.map(({ image, title }, index) => (
                         <Product imgSrc={image} title={title} key={index} />
                     ))
                 }

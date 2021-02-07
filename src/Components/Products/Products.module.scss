@@ -9,14 +9,37 @@
     padding: 0 2rem;
     margin-top: 2rem;
     margin-bottom: 5rem;
+    &HeaderDesktop{
+        display: none;
+        margin-bottom: 3rem;
+        @include md {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            & > *:last-child{
+                align-self: flex-start;
+            }
+
+            header{
+                display: inline;
+            }
+        }
+    }
     &Header{
         font-size: 2rem;
         font-weight: 300;
         margin-bottom: 3rem;
+        @include md{
+            display: none;
+        }
     }
 
     @include md {
         padding: 0 6rem;
+        & > *:last-child{
+            display: none;
+        }
     }
     &Container{
         width: 100%;
@@ -76,6 +99,9 @@
         h1 {
             font-weight: 200;
             font-size: 1.4rem;
+            @include md{
+                font-size: 2rem;    
+            }
         }
     }
 }
